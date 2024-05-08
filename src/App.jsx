@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import './App.css'
 import HomePage from './pages/HomePage'
+import PollingPage from './pages/polling';
 
 const router = createBrowserRouter([
   {
@@ -9,6 +10,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <HomePage/>
+      </>
+    )
+  },
+  {
+    path : '/polling',
+    element: (
+      <>
+        <PollingPage/>
       </>
     )
   },
