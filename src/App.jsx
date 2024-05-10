@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import RegisterPage from "./pages/register";
+import ChoiceLeaderPage from "./pages/choiceleader";
 
 const router = createBrowserRouter([
   {
@@ -12,10 +13,20 @@ const router = createBrowserRouter([
         <HomePage />
       </>
     ),
+  },
+  {
     path: "/register",
     element: (
       <>
         <RegisterPage />
+      </>
+    ),
+  },
+  {
+    path: "/choiceleader",
+    element: (
+      <>
+        <ChoiceLeaderPage />
       </>
     ),
   },
