@@ -14,7 +14,7 @@ const router = createBrowserRouter([
       <>
         <HomePage />
       </>
-    ),
+    )
   },
   {
     path: "/login",
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       <>
         <RegisterPage />
       </>
-    ),
+    )
   },
   {
     path: "/choiceleader",
