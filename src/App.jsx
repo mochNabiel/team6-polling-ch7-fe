@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/register";
 import ChoiceLeaderPage from "./pages/choiceleader";
+import PollingPage from "./pages/polling";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <ChoiceLeaderPage />
+      </>
+    ),
+  },
+  {
+    path: "/polling",
+    element: (
+      <>
+        <PollingPage />
       </>
     ),
   },
