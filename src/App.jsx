@@ -1,30 +1,46 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import './App.css'
-import HomePage from './pages/HomePage'
-import PollingPage from './pages/polling';
+import "./App.css";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/register";
+import PollingPage from "./pages/polling";
 
 const router = createBrowserRouter([
   {
-    path : '/',
+    path: "/",
     element: (
       <>
-        <HomePage/>
+        <HomePage />
       </>
-    )
+    ),
   },
   {
-    path : '/polling',
+    path: "/login",
     element: (
       <>
-        <PollingPage/>
+        <LoginPage />
       </>
-    )
+    ),
   },
-])
+  {
+    path: "/register",
+    element: (
+      <>
+        <RegisterPage />
+      </>
+    ),
+  },
+  {
+    path: "/polling",
+    element: (
+      <>
+        <PollingPage />
+      </>
+    ),
+  },
+]);
 
 export default function App() {
-  return (
-    <RouterProvider router={router} />
-  )
+  return <RouterProvider router={router} />;
 }
