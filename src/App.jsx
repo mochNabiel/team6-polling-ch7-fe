@@ -4,6 +4,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/register";
+import PollingPage from "./pages/polling";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <RegisterPage />
+      </>
+    ),
+  },
+  {
+    path: "/polling",
+    element: (
+      <>
+        <PollingPage />
       </>
     ),
   },
