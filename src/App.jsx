@@ -11,13 +11,15 @@ const router = createBrowserRouter([
       <>
         <HomePage />
       </>
-    ),
+    )
+  },
+  {
     path: "/register",
     element: (
       <>
         <RegisterPage />
       </>
-    ),
+    )
   },
 ]);
 
